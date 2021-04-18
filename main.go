@@ -13,7 +13,7 @@ import (
 	"golang.org/x/crypto/sha3"
 )
 
-func getFileContenHash(filePath string) (string, error) {
+func getFileContentHash(filePath string) (string, error) {
 	f, err := os.Open(filePath)
 	if err != nil {
 		return "", err
@@ -77,7 +77,7 @@ func encode() (uint64, uint32, error) {
 				defer f.Close()
 			}
 
-			fileHash, _ := getFileContenHash(fmt.Sprintf("symbols\\%d-%d", sbn, esi))
+			fileHash, _ := getFileContentHash(fmt.Sprintf("symbols\\%d-%d", sbn, esi))
 			fmt.Printf("%v\n", fileHash)
 		}
 	}
