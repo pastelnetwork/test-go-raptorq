@@ -72,12 +72,12 @@ func encode() (uint64, uint32, error) {
 				return 0, 0, err
 			}
 			if w != 0 {
-				f, _ := os.Create(fmt.Sprintf("symbols\\%d-%d", sbn, esi))
+				f, _ := os.Create(fmt.Sprintf("symbols/%d-%d", sbn, esi))
 				f.Write(symbol)
 				defer f.Close()
 			}
 
-			fileHash, _ := getFileContentHash(fmt.Sprintf("symbols\\%d-%d", sbn, esi))
+			fileHash, _ := getFileContentHash(fmt.Sprintf("symbols/%d-%d", sbn, esi))
 			fmt.Printf("%v\n", fileHash)
 		}
 	}
@@ -122,7 +122,7 @@ func decode(cOTI uint64, ssOTI uint32) {
 				fmt.Printf("Wrong file name - %s", f.Name())
 				continue
 			}
-			symFileName := fmt.Sprintf("symbols\\%s", f.Name())
+			symFileName := fmt.Sprintf("symbols/%s", f.Name())
 			symBlock, err := ioutil.ReadFile(symFileName)
 			if err != nil {
 				fmt.Printf("File reading error %s; file - %s", err, f.Name())
@@ -155,6 +155,8 @@ func decode(cOTI uint64, ssOTI uint32) {
 }
 
 func main() {
-	cOTI, ssOTI, _ := encode()
-	decode(cOTI, ssOTI)
+	for {
+		cOTI, ssOTI, _ := encode()
+		decode(cOTI, ssOTI)
+	}
 }

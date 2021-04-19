@@ -1,5 +1,9 @@
 github.com/pastelnetwork/go-raptorq v0.0.0-20210416110722-a687e8ad6361 h1:2LAxo3Hjk9Mj37NnMtymbeRhvfa6+UBgLq5UY1SaYSE=
 github.com/pastelnetwork/go-raptorq v0.0.0-20210416110722-a687e8ad6361/go.mod h1:JZhnHDYXsMrltmu+FQjflXJ6W+iHGQlohaDH+QaevCU=
+github.com/pastelnetwork/go-raptorq v0.0.0-20210419132923-39d205d0c4fe h1:XSwmMbnrY+Zgy8SKb0ZDhdv2rJ4r8hKtPupS0COLg5M=
+github.com/pastelnetwork/go-raptorq v0.0.0-20210419132923-39d205d0c4fe/go.mod h1:JZhnHDYXsMrltmu+FQjflXJ6W+iHGQlohaDH+QaevCU=
+github.com/pastelnetwork/go-raptorq v0.0.0-20210419174807-04225cd272f2 h1:MSwdQ9IXfnbuXBHi+Y0wrcBn+58PjIi2QHXmpkJ3Igk=
+github.com/pastelnetwork/go-raptorq v0.0.0-20210419174807-04225cd272f2/go.mod h1:JZhnHDYXsMrltmu+FQjflXJ6W+iHGQlohaDH+QaevCU=
 golang.org/x/crypto v0.0.0-20210415154028-4f45737414dc h1:+q90ECDSAQirdykUN6sPEiBXBsp8Csjcca8Oy7bgLTA=
 golang.org/x/crypto v0.0.0-20210415154028-4f45737414dc/go.mod h1:T9bdIzuCu7OtxOm1hfPfRQxPLYneinmdGuTeoZ9dtd4=
 golang.org/x/net v0.0.0-20210226172049-e18ecbb05110/go.mod h1:m0MpNAwzfU5UDzcl9v0D8zg8gWTRqZa9RBIspLL5mdg=
