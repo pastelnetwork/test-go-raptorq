@@ -155,8 +155,11 @@ func decode(cOTI uint64, ssOTI uint32) {
 }
 
 func main() {
+	counter := 1
 	for {
+		fmt.Printf("\nstarting iteration %v\n", counter)
 		cOTI, ssOTI, _ := encode()
 		decode(cOTI, ssOTI)
+		counter++
 	}
 }
